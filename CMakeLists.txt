@@ -19,17 +19,12 @@ if(NOT CMAKE_CXX_STANDARD IN_LIST VALID_CXX_STANDARDS )
 endif()
 #-----------------------------------------------------------------------------
 
-project(HW06
+project(LAB02
         VERSION 0.0.2026
         LANGUAGES CXX)
 
 find_package(ITK 6.0 REQUIRED)
 include(${ITK_USE_FILE})
-
-find_package(SlicerExecutionModel REQUIRED GenerateCLP)
-include(${GenerateCLP_USE_FILE})
-include(${SlicerExecutionModel_USE_FILE})
-include(${SlicerExecutionModel_CMAKE_DIR}/SEMMacroBuildCLI.cmake)
 
 set(MYHAWKID "jingmliang")
 
