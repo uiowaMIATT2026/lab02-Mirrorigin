@@ -27,8 +27,10 @@ Given the 1-million-run constraint, `itk::ImageMomentsCalculator` is the only re
 ## 3.1 Mathematical Formulation
 
 - **Translation ($T$):** Calculated as the difference between the physical Center of Gravity ($c$) of the fixed and moving images.
+  
   $$T = c_{fixed} - c_{moving}$$
 - **Scale ($S$):** Calculated using the Total Mass ($M_{00}$, representing the area for uniform intensity circles).
+  
   $$S = \sqrt{\frac{M_{00, fixed}}{M_{00, moving}}}$$
 
 ## 3.2 Software Optimization
