@@ -1,0 +1,15 @@
+[workspace]
+authors = ["mirrorigin <jingmliang@uiowa.edu>"]
+channels = ["conda-forge"]
+name = "ece5940_lab02"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.10"
+
+[pypi-dependencies]
+itk = "==5.4.5"
+numpy = "*"

@@ -39,6 +39,7 @@ To further minimize overhead for the 1-million-run requirement:
 - **C++ Execution:** The solution is implemented in raw C++ using ITK. For $1,000,000$ executions, raw C++ delivers high speed and efficient memory management.
 - **Removal of CLI Frameworks:** Frameworks like `SlicerExecutionModel` (SEM) were intentionally excluded to eliminate XML parsing and CLI initialization overhead, significantly reducing application startup time. 
 - **Compiler Optimization:** The build system (CMake) is configured to mandate a Release build to leverage maximum compiler optimizations (e.g., `-O3`), ensuring peak performance during the millions of executions.
+- **Engineering Reproducibility:** To guarantee strict reproducibility of the Ground Truth data generation, this project utilizes Pixi as a deterministic package manager.
 
 # 4 Data Generation and Validation
 
